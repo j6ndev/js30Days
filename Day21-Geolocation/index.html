@@ -20,7 +20,7 @@
 
     navigator.geolocation.watchPosition((data) => {
       speedValue.textContent = data.coords.speed;
-      arro.style.transform = `rotate(${data.coords.heading}deg)`;
+      arrow.style.transform = `rotate(${data.coords.heading}deg)`;
     }, (err) => {
       console.log(err);
     });
